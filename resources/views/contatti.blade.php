@@ -37,12 +37,18 @@
         </style>
     </head>
     <body>
-        <div class="title"><h1>contatti</h1></div>
+        <div class="title"><h1>{{$title}}</h1></div>
         <div class="links">
             <a href="{{route('homepage')}}">home</a>
             <a href="{{route('about-us')}}">about us</a>
             <a href="{{route('contatti')}}">contatti</a>
         </div>
-        
+        <div>
+            <ul>
+                @foreach($nomi as $key => $contatto)
+                <li>{{$key}}: {{ $contatto }}</li>
+                @endforeach
+            </ul>
+        </div>
     </body>
 </html>

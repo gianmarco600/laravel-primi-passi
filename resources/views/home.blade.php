@@ -11,6 +11,9 @@
 
         <!-- Styles -->
         <style>
+            *{
+                box-sizing: border-box;
+            }
             html, body {
                 background-color: #fff;
                 color: #636b6f;
@@ -18,16 +21,20 @@
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
+                padding: 0
+            }
+            
+            .title{
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                
             }
             a{
                 display: inline-block;
                 margin: 50px
 
             }
-            .title{
-                width: 100%
-            }
-
             h1{
                 text-align: center;
             }
@@ -40,12 +47,12 @@
         </style>
     </head>
     <body>
-        <div class="title"><h1>hello world</h1></div>
+        <div class="title"><h1>{{$title}}</h1></div>
         <div class="links">
             <a href="{{route('homepage')}}">home</a>
             <a href="{{route('about-us')}}">about us</a>
             <a href="{{route('contatti')}}">contatti</a>
         </div>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit perferendis accusamus placeat repudiandae. Beatae minima consequatur corrupti totam perferendis nam, porro est blanditiis corporis quae nostrum quasi quaerat officiis iusto.</p>
+        <p>{{ $parag }}</p>
     </body>
 </html>

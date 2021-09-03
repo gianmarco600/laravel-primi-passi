@@ -37,12 +37,12 @@
         </style>
     </head>
     <body>
-        <div class="title"><h1>about us</h1></div>
+        <div class="title"><h1>{{$title}}</h1></div>
         <div class="links">
             <a href="{{route('homepage')}}">home</a>
             <a href="{{route('about-us')}}">about us</a>
             <a href="{{route('contatti')}}">contatti</a>
         </div>
-        
+        <p>{{$parag}}</p>
     </body>
 </html>
